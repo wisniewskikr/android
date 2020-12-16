@@ -1,27 +1,23 @@
-HELLO WORLD
-===========
+ANDROID WEB VIEW
+=================
 
 
 DESCRIPTION
 -----------
 
-This is a simple Android project which displays "Hello World" text.
+This is a simple Android project which displays page "www.google.com" in Web View.
 
 
 IMPLEMENTATION
 -----------
 
 Implementation details:
-* In tool "Android Studio" select: File -> New -> New Project...
-* On wizard page "Select a Project Template" select: "Empty Activity"
-* On wizard page "Configure Your Project" select:
-** Name: App
-** Package Name: com.example.app
-** Save Location: <location>
-** Language: Java
-** Minimum SDK: API 26: Android 8.0 (Oreo)
-* Java code should be implemented in MainActivity.java
-* Visibility configuration should be implemented in activity_main.xml
+* Use as the base Android Hello World application;
+* Implement changes in file "activity_main.xml". Element "WebView" should be created;
+* Implement changes in file "MainActivity.java". Class WebView should be used here;
+* Implement changes in file "AndroidManifest.xml":
+** Following element should be added: <uses-permission android:name="android.permission.INTERNET"/>
+** Following attribute should be added to element "application": android:usesCleartextTraffic="true"
 
 
 LAUNCH
